@@ -1,0 +1,65 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: whitesmoke;
+}
+
+h1{
+   text-align: center;
+   letter-spacing: 5px;
+   color: rgb(44, 58, 102);
+}
+
+.loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loader img{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 4%;
+}
+
+.row img{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 460px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+        margin: 40px 40px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+        margin: 10px 20px;
+    }
+}
